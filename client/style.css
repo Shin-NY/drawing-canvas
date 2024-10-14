@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+canvas {
+  background-color: white;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.control-panel {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-panel__first-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control-panel__fill > i {
+  color: tomato;
+  transition: transform 0.3s ease-in-out;
+}
+
+.control-panel__fill > i:hover {
+  transform: scale(1.1);
+}
+
+.control-panel__brush-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-panel__clear {
+  padding: 5px 10px;
+  background-color: teal;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.control-panel__clear:hover {
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+.control-panel__brush-colors {
+  margin-top: 10px;
+  display: flex;
+}
+
+.control-panel__brush-colors > div {
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.control-panel__brush-colors > div:hover {
+  transform: scale(1.1);
+}
